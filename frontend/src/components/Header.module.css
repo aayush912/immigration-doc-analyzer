@@ -1,0 +1,48 @@
+.header {
+  background: #1a56db;
+  color: white;
+  padding: 0 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.tagline {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.15s;
+}
+
+.nav a:hover {
+  color: white;
+}

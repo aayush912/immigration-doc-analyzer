@@ -1,0 +1,24 @@
+# Environment
+.env
+.env.local
+*.env
+
+# Maven
+backend/target/
+backend/.mvn/
+!backend/.mvn/wrapper/maven-wrapper.jar
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp

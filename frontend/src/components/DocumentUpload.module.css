@@ -1,0 +1,142 @@
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  margin-bottom: 2rem;
+}
+
+.modeToggle {
+  display: flex;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  width: fit-content;
+}
+
+.tab, .activeTab {
+  padding: 0.5rem 1.25rem;
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.tab { color: #6b7280; }
+
+.activeTab {
+  background: #1a56db;
+  color: white;
+  font-weight: 600;
+}
+
+.dropzone {
+  border: 2px dashed #d1d5db;
+  border-radius: 10px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  margin-bottom: 1.25rem;
+}
+
+.dropzone:hover { border-color: #1a56db; background: #f0f5ff; }
+.dragActive { border-color: #1a56db; background: #e8f0fe; }
+.hasFile { border-color: #057a55; background: #f0fdf4; }
+
+.dropIcon { font-size: 2rem; display: block; margin-bottom: 0.5rem; }
+.dropPrompt p { color: #374151; margin-bottom: 0.25rem; }
+.dropHint { font-size: 0.82rem; color: #9ca3af; }
+
+.fileInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.fileIcon { font-size: 1.5rem; }
+.fileName { font-weight: 600; color: #111827; word-break: break-all; }
+
+.clearBtn {
+  border: none;
+  background: #fee2e2;
+  color: #c81e1e;
+  border-radius: 6px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+.textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.15s;
+}
+.textarea:focus { outline: none; border-color: #1a56db; }
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 520px) {
+  .options { grid-template-columns: 1fr; }
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.select {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  background: white;
+}
+.select:focus { outline: none; border-color: #1a56db; }
+
+.submitBtn {
+  width: 100%;
+  background: #1a56db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.submitBtn:hover:not(:disabled) { background: #1140a1; }
+.submitBtn:disabled { background: #93c5fd; cursor: not-allowed; }
+
+.spinner::after {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
